@@ -1,5 +1,5 @@
-## Excel Salary Dashboard
-![Alt Text](/Project_Dashboard/Images/1_Salary_Dashboard.gif)
+## 📊 Excel Salary Dashboard
+![Alt Text](/Project1_Dashboard/Images/1_Salary_Dashboard.gif)
 
 ## Introduction
 This data jobs salary dashboard was created to help job seekers investigate salaries for their desired jobs and ensure they are being adequately compensated.
@@ -7,7 +7,7 @@ This data jobs salary dashboard was created to help job seekers investigate sala
 The data is from my Excel course, which provides a foundation in analyzing data using this powerful tool. The data contains detailed information on job titles, salaries, locations, and essential skills that are presented here.
 
 ## Dashboard File
-My final dashboard is in ![Download Salary Dashboard](Project_Dashboard/1_Salary_Dashboard.xlsx)
+My final dashboard is in ![Download Salary Dashboard](/Project1_Dashboard/1_Salary_Dashboard.xlsx)
 
 ## Excel Skills Used
 The following Excel skills were utilized for analysis:
@@ -27,7 +27,7 @@ The dataset used for this project contains real-world data science job informati
 ## Dashboard Build
 - 📉 Charts
 - 📊 Data Science Job Salaries - Bar Chart
-![Alt Text](/Project_Dashboard/Images/1_Salary_Dashboard_Chart1.png)
+![Alt Text](/Project1_Dashboard/Images/1_Salary_Dashboard_Chart1.png)
 
 - 🛠️ Excel Features: Utilized bar chart feature (with formatted salary values) and optimized layout for clarity.
 - 🎨 Design Choice: Horizontal bar chart for visual comparison of median salaries.
@@ -36,7 +36,7 @@ The dataset used for this project contains real-world data science job informati
 
 ## 🗺️ Country Median Salaries - Map Chart
 
-![Alt Text](/Project_Dashboard/Images/1_Salary_Dashboard_Country_Map.gif)
+![Alt Text](/Project1_Dashboard/Images/1_Salary_Dashboard_Country_Map.gif)
 
 - 🛠️ Excel Features: Utilized Excel's map chart feature to plot median salaries globally.
 - 🎨 Design Choice: Color-coded map to visually differentiate salary levels across regions.
@@ -46,6 +46,7 @@ The dataset used for this project contains real-world data science job informati
 - 🧮 Formulas and Functions
 
 ## 💰 Median Salary by Job Titles
+```
 =MEDIAN(
 IF(
     (jobs[job_title_short]=A2)*
@@ -55,7 +56,7 @@ IF(
     jobs[salary_year_avg]
 )
 )
-
+```
 - 🔍 Multi-Criteria Filtering: Checks job title, country, schedule type, and excludes blank salaries.
 - 📊 Array Formula: Utilizes MEDIAN() function with nested IF() statement to analyze an array.
 - 🎯 Tailored Insights: Provides specific salary information for job titles, regions, and schedule types.
@@ -63,24 +64,26 @@ IF(
 
 ## 🍽️ Background Table
 
-![Alt Text](/Project_Dashboard/Images/1_Salary_Dashboard_Screenshot1.png)
+![Alt Text](/Project1_Dashboard/Images/1_Salary_Dashboard_Screenshot1.png)
 
 ## 📉 Dashboard Implementation
 
-![Alt Text](/Project_Dashboard/Images/1_Salary_Dashboard_Job_Title.png)
+![Alt Text](/Project1_Dashboard/Images/1_Salary_Dashboard_Job_Title.png)
 
 ## ⏰ Count of Job Schedule Type
+```
 =FILTER(J2#,(NOT(ISNUMBER(SEARCH("and",J2#))+ISNUMBER(SEARCH(",",J2#))))*(J2#<>0))
+```
 - 🔍 Unique List Generation: This Excel formula below employs the FILTER() function to exclude entries containing "and" or commas, and omit zero values.
 - 🔢 Formula Purpose: This formula populates the table below, which gives us a list of unique job schedule types.
 
 ## 🍽️ Background Table
 
-![Alt Text](/Project_Dashboard/Images/1_Salary_Dashboard_Screenshot2.png)
+![Alt Text](/Project1_Dashboard/Images/1_Salary_Dashboard_Screenshot2.png)
 
 ## 📉 Dashboard Implementation:
 
-![Alt Text](/Project_Dashboard/Images/1_Salary_Dashboard_Type.png)
+![Alt Text](/Project1_Dashboard/Images/1_Salary_Dashboard_Type.png)
 
 # ❎ Data Validation
  **🔍 Filtered List**
